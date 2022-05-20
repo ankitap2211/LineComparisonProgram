@@ -16,12 +16,30 @@ public class LineComparison {
 
         Double lenOfLineFirst = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
         System.out.println("Length of first line " + lenOfLineFirst);
+
+        System.out.print("Enter x3 co-ordinate:");
+        int x3 = sc.nextInt();
+        System.out.print("Enter x4 co-ordinate:");
+        int x4 = sc.nextInt();
+        System.out.print("Enter y3 co-ordinate:");
+        int y3 = sc.nextInt();
+        System.out.print("Enter y4 co-ordinate:");
+        int y4 = sc.nextInt();
+
+        Double lenOfLineSecond = Math.sqrt(Math.pow((x4 - x3), 2) + Math.pow((y4 - y3), 2));
+        System.out.println("Length of first line " + lenOfLineSecond);
+
+        if (lenOfLineFirst.equals(lenOfLineSecond))
+            System.out.println("Line is equal");
+        else
+            System.out.println("Lines are not equal");
     }
 
-public class LineComparisonProgram {
-    public static void main(String[] args) {
-        System.out.println("Welcome to Line Comparison Computation Program");
-	LineComparison linecomparison = new LineComparison();
-        linecomparison.lengthCalculation();
+    public class LineComparisonProgram {
+        public static void main(String[] args) {
+            System.out.println("Welcome to Line Comparison Computation Program");
+            LineComparison linecomparison = new LineComparison();
+            linecomparison.lengthCalculation();
+        }
     }
 }
