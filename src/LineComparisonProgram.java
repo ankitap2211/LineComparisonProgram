@@ -7,7 +7,7 @@ public class LineComparison {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter x1 co-ordinate:");
         int x1 = sc.nextInt();
-        System.out.print("Enter x1 co-ordinate:");
+        System.out.print("Enter x2 co-ordinate:");
         int x2 = sc.nextInt();
         System.out.print("Enter y1 co-ordinate:");
         int y1 = sc.nextInt();
